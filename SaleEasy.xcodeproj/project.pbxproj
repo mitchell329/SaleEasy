@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A20FE23E1E80AD05009BACD6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A20FE23D1E80AD05009BACD6 /* UIKit.framework */; };
 		A2A28B541E7FE47F00416879 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A28B531E7FE47F00416879 /* AppDelegate.swift */; };
 		A2A28B571E7FE47F00416879 /* SaleEasy.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A2A28B551E7FE47F00416879 /* SaleEasy.xcdatamodeld */; };
 		A2A28B591E7FE47F00416879 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A28B581E7FE47F00416879 /* MasterViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A20FE23D1E80AD05009BACD6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A2A28B501E7FE47F00416879 /* SaleEasy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SaleEasy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2A28B531E7FE47F00416879 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A2A28B561E7FE47F00416879 /* SaleEasy.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SaleEasy.xcdatamodel; sourceTree = "<group>"; };
@@ -33,17 +35,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A20FE23E1E80AD05009BACD6 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A20FE23C1E80AD05009BACD6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A20FE23D1E80AD05009BACD6 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A2A28B471E7FE47F00416879 = {
 			isa = PBXGroup;
 			children = (
 				A2A28B521E7FE47F00416879 /* SaleEasy */,
 				A2A28B511E7FE47F00416879 /* Products */,
+				A20FE23C1E80AD05009BACD6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -275,6 +287,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.mitchell.SaleEasy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -288,6 +301,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.mitchell.SaleEasy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -310,6 +324,7 @@
 				A2A28B691E7FE47F00416879 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
